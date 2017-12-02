@@ -23,8 +23,8 @@ check_config "db_host" "$HOST"
 check_config "db_port" "$PORT"
 check_config "db_user" "$USER"
 check_config "db_password" "$PASSWORD"
-check_config "db_name" "$DOCKER_DB_NAME"
-check_config "dbfilter" "$DOCKER_DB_NAME"
+check_config "d" "$DOCKER_DB_NAME"
+check_config "db-filter" "^$DOCKER_DB_NAME$"
 
 case "$1" in
     -- | openerp-server)
